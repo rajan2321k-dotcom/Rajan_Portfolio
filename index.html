@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rajan | MCA Student, Python Developer & Data/AI Enthusiast</title>
+<meta name="description" content="Portfolio of Rajan, an MCA student building practical projects with Python, SQL, APIs, Machine Learning and modern web technologies.">
+<meta property="og:title" content="Rajan | Python Developer & Data/AI Enthusiast">
+<meta property="og:description" content="MCA student building practical software projects with Python, SQL, APIs and Machine Learning.">
+<meta name="color-scheme" content="dark">
+<style>
+:root{--bg:#070b16;--bg2:#0c1324;--text:#e8ecf5;--muted:#9aa6bf;--gold:#d4af6a;--line:rgba(255,255,255,.09);--glass:rgba(255,255,255,.04);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:72px;height:100%}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:radial-gradient(1000px 500px at 80% -10%,#15234a55,transparent),var(--bg);color:var(--text);font:16px/1.65 "Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{font-family:"Georgia","Times New Roman",serif;line-height:1.2;margin:0}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:rgba(7,11,22,.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav{display:flex;justify-content:space-between;align-items:center;height:60px}
+nav .logo{font-family:Georgia,serif;font-weight:700;text-decoration:none;color:var(--gold)}
+nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;overflow-x:auto}
+nav ul a{color:var(--muted);text-decoration:none;font-size:14px;white-space:nowrap}
+nav ul a:hover,nav ul a:focus-visible{color:var(--text)}
+section{padding:72px 0}
+.eyebrow{color:var(--gold);font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:8px}
+h2{font-size:clamp(26px,4vw,34px);margin-bottom:28px}
+.hero{padding:96px 0 72px}
+.hero h1{font-size:clamp(38px,7vw,64px)}
+.hero h1 span{color:var(--gold)}
+.role{font-size:clamp(16px,2.4vw,20px);color:var(--muted);margin:14px 0 18px}
+.hero p.lead{max-width:600px;color:var(--text);opacity:.9}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-block;padding:10px 20px;border-radius:8px;border:1px solid var(--line);background:var(--glass);text-decoration:none;font-size:15px;transition:.2s;cursor:pointer;color:var(--text);font-family:inherit}
+.btn:hover,.btn:focus-visible{border-color:var(--gold);transform:translateY(-1px)}
+.btn.primary{background:var(--gold);color:#14110a;border-color:var(--gold);font-weight:600}
+.btn[aria-disabled=true]{opacity:.5;cursor:not-allowed}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.card{background:var(--glass);border:1px solid var(--line);border-radius:14px;padding:22px;backdrop-filter:blur(10px);transition:border-color .2s}
+.card:hover{border-color:rgba(212,175,106,.45)}
+.card h3{font-size:19px;margin-bottom:8px}
+.card p{color:var(--muted);margin:0 0 12px;font-size:15px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px;padding:0;list-style:none}
+.tags li{font-size:12.5px;padding:3px 10px;border-radius:99px;border:1px solid var(--line);color:var(--gold);background:rgba(212,175,106,.06)}
+.card ul.feat{margin:0 0 16px;padding-left:18px;color:var(--muted);font-size:14.5px}
+.card .btns{margin-top:auto}
+.proj{display:flex;flex-direction:column}
+.proj .btn{padding:7px 14px;font-size:14px}
+.timeline{border-left:2px solid var(--line);padding-left:22px;display:grid;gap:22px}
+.timeline .item{position:relative}
+.timeline .item::before{content:"";position:absolute;left:-29px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--gold)}
+.timeline h3{font-size:18px}.timeline .meta{color:var(--muted);font-size:14px}
+.two{display:grid;gap:32px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+form{display:grid;gap:14px}
+label{font-size:14px;color:var(--muted);display:grid;gap:6px}
+input,textarea{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:8px;color:var(--text);padding:11px 12px;font:inherit}
+input:focus,textarea:focus{outline:2px solid var(--gold);outline-offset:1px}
+.note{font-size:13px;color:var(--muted)}
+.contact-list{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.contact-list b{color:var(--gold);font-weight:500;display:inline-block;min-width:84px}
+footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:var(--muted);font-size:14px}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.btn{transition:none}}
+a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:var(--gold);color:#000;padding:8px;z-index:20}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="wrap"><nav aria-label="Main">
+<a class="logo" href="#home">Rajan</a>
+<ul id="nav"></ul>
+</nav></div></header>
+
+<main id="main">
+<section id="home" class="hero"><div class="wrap">
+<h1>Hi, I'm <span>Rajan</span></h1>
+<p class="role">MCA Student | Python Developer | Data &amp; AI Enthusiast</p>
+<p class="lead">I build practical software projects using Python, SQL, APIs, Machine Learning, and modern web technologies.</p>
+<div class="btns" id="heroBtns"></div>
+</div></section>
+
+<section id="about"><div class="wrap reveal">
+<div class="eyebrow">About Me</div><h2>A fresher building real projects</h2>
+<div class="two"><div>
+<p>I completed my B.Sc. Physics and I am currently pursuing an MCA, expected to graduate in 2027. My interests are Python, SQL, Data Analytics, Artificial Intelligence, Machine Learning, Backend Development and real-world software projects.</p>
+<p>My goal is to start my IT career as a fresher in a Python, Data Analytics, AI/ML or backend-related role.</p></div>
+<div class="card"><h3>Career focus</h3><ul class="tags" id="focus"></ul></div></div>
+</div></section>
+
+<section id="skills"><div class="wrap reveal">
+<div class="eyebrow">Skills</div><h2>Tools I work with</h2>
+<div class="grid" id="skillGrid"></div>
+</div></section>
+
+<section id="projects"><div class="wrap reveal">
+<div class="eyebrow">Projects</div><h2>Selected work</h2>
+<div class="grid" id="projGrid"></div>
+</div></section>
+
+<section id="experience"><div class="wrap reveal">
+<div class="eyebrow">Experience</div><h2>Experience &amp; training</h2>
+<div class="timeline" id="expList"></div>
+</div></section>
+
+<section id="education"><div class="wrap reveal">
+<div class="eyebrow">Education</div><h2>Academic background</h2>
+<div class="timeline" id="eduList"></div>
+</div></section>
+
+<section id="contact"><div class="wrap reveal">
+<div class="eyebrow">Contact</div><h2>Get in touch</h2>
+<div class="two">
+<div class="card"><ul class="contact-list" id="contactList"></ul></div>
+<form id="form" novalidate>
+<label>Name<input name="name" required autocomplete="name"></label>
+<label>Email<input name="email" type="email" required autocomplete="email"></label>
+<label>Message<textarea name="message" rows="5" required></textarea></label>
+<button class="btn primary" type="submit">Send Message</button>
+<p class="note" id="formNote" role="status"></p>
+</form></div>
+</div></section>
+</main>
+<footer><div class="wrap">&copy; <span id="yr"></span> Rajan. Tamil Nadu, India.</div></footer>
+
+<script>
+/* ---- Content (edit here) ---- */
+const CONFIG={
+  email:"rajan2321k@gmail.com", github:"https://github.com/rajan2321k-dotcom", linkedin:"https://www.linkedin.com/in/s-rajan-717147274"
+};
+const SECTIONS=["Home","About Me","Skills","Projects","Experience","Education","Contact"];
+const IDS=["home","about","skills","projects","experience","education","contact"];
+const FOCUS=["Python Developer","Data Analyst","AI/ML Fresher","Backend Developer","Junior Software Developer"];
+const SKILLS={
+  "Programming":["Python","Java","JavaScript"],
+  "Backend":["FastAPI","Flask","REST API"],
+  "Database":["MySQL","SQLite","MongoDB"],
+  "Data & AI":["Pandas","NumPy","Scikit-learn","Machine Learning"],
+  "Frontend":["HTML","CSS","JavaScript","React"],
+  "Tools":["Git","GitHub","VS Code"],
+  "Analytics":["Excel","Power BI","Tableau"]
+};
+const PROJECTS=[
+ {name:"DataPulse",sub:"Data Pipeline Monitoring & Data Quality Platform",tech:["Python","FastAPI","SQLite","React","REST API"],
+  desc:"A data pipeline monitoring platform covering ingestion, transformation, monitoring and quality checks.",
+  feat:["Data ingestion and transformation","Data quality checks","Pipeline execution and monitoring","Lineage tracking"]},
+ {name:"Smart Travel Planner",tech:["Python","Flask","REST API","HTML","CSS","JavaScript","Leaflet","OpenStreetMap"],
+  desc:"A travel planning app for searching routes between cities and exploring places along the way.",
+  feat:["Route search between cities","Distance and estimated travel time","Routes shown on a map","Discover tourist spots, nature, temples, restaurants and cafes"]},
+ {name:"Blockchain-Based Voting System",tech:["Python","Flask","MySQL","Solidity","Web3.py","Ganache"],
+  desc:"A voting application with blockchain transaction verification.",
+  feat:["Candidate management","Voter registration","Secure authentication","Voting and transaction verification"]},
+ {name:"AI-Powered Career Path Advisor",tech:["Python","Machine Learning","SQL"],
+  desc:"An academic project that helps students explore suitable career paths.",
+  feat:["Uses skills, interests and educational background","Machine learning based suggestions"]},
+ {name:"Student Management System",tech:["React","FastAPI","SQLite"],
+  desc:"A web application for managing student records.",
+  feat:["React frontend","FastAPI backend","SQLite storage"]},
+ {name:"Employee Tracker",tech:["Android","Java","SQLite"],
+  desc:"An Android app for tracking employee work entries.",
+  feat:["Manage employees","Manage work types","Record work entries"]}
+];
+const EXP=[
+ {t:"KG Genius Lab + TNQ Technologies",m:"Pre-placement internship training"},
+ {t:"KG Genius Lab",m:"Eve Shift / Technical Experience"},
+ {t:"D-Mart",m:"Part-time Billing / Cashier"},
+ {t:"Spar",m:"Part-time Billing"}
+];
+const EDU=[
+ {t:"MCA",m:"Currently pursuing | Expected graduation: 2027"},
+ {t:"B.Sc. Physics",m:"Kamaraj College | 2022 to 2025"}
+];
+
+/* ---- Helpers / reusable components ---- */
+const $=id=>document.getElementById(id);
+const el=(tag,cls,html)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(html!=null)e.innerHTML=html;return e};
+const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const isSet=v=>v&&!/^\[ADD/.test(v);
+const Tags=(arr)=>`<ul class="tags">${arr.map(t=>`<li>${esc(t)}</li>`).join("")}</ul>`;
+const LinkBtn=(label,url,primary)=>{
+  const a=el("a","btn"+(primary?" primary":""),esc(label));
+  if(isSet(url)){a.href=url;a.target="_blank";a.rel="noopener noreferrer"}
+  else{a.href="#contact";a.setAttribute("aria-disabled","true");a.title="Link coming soon"}
+  return a};
+const ProjectCard=p=>{
+  const c=el("article","card proj",
+   `<h3>${esc(p.name)}</h3>${p.sub?`<p style="margin-bottom:8px;color:var(--text)">${esc(p.sub)}</p>`:""}<p>${esc(p.desc)}</p>${Tags(p.tech)}<ul class="feat">${p.feat.map(f=>`<li>${esc(f)}</li>`).join("")}</ul>`);
+  const b=el("div","btns");b.append(LinkBtn("GitHub",CONFIG.github));c.append(b);return c};
+const SkillCard=(name,items)=>el("div","card",`<h3>${esc(name)}</h3>${Tags(items)}`);
+const TimelineItem=i=>el("div","item",`<h3>${esc(i.t)}</h3><div class="meta">${esc(i.m)}</div>`);
+
+/* ---- Render ---- */
+$("nav").innerHTML=SECTIONS.map((s,i)=>`<li><a href="#${IDS[i]}">${s.replace(" Me","")}</a></li>`).join("");
+$("focus").innerHTML=FOCUS.map(f=>`<li>${f}</li>`).join("");
+const hb=$("heroBtns");
+const vp=el("a","btn primary","View My Projects");vp.href="#projects";
+const ct=el("a","btn","Contact Me");ct.href="#contact";
+hb.append(vp,ct,LinkBtn("GitHub",CONFIG.github),LinkBtn("LinkedIn",CONFIG.linkedin));
+Object.entries(SKILLS).forEach(([k,v])=>$("skillGrid").append(SkillCard(k,v)));
+PROJECTS.forEach(p=>$("projGrid").append(ProjectCard(p)));
+EXP.forEach(i=>$("expList").append(TimelineItem(i)));
+EDU.forEach(i=>$("eduList").append(TimelineItem(i)));
+$("contactList").innerHTML=
+ `<li><b>Name</b> Rajan</li><li><b>Location</b> Tamil Nadu, India</li>`+
+ [["Email",CONFIG.email,"mailto:"+CONFIG.email],["GitHub",CONFIG.github,CONFIG.github],["LinkedIn",CONFIG.linkedin,CONFIG.linkedin]]
+ .map(([l,v,h])=>`<li><b>${l}</b> ${isSet(v)?`<a href="${esc(h)}">${esc(v)}</a>`:`<span style="color:var(--muted)">Coming soon</span>`}</li>`).join("");
+$("yr").textContent=new Date().getFullYear();
+
+/* Contact form: opens the visitor's mail app (no server needed) */
+$("form").addEventListener("submit",e=>{
+  e.preventDefault();const f=e.target,n=$("formNote");
+  if(!f.name.value.trim()||!/\S+@\S+\.\S+/.test(f.email.value)||!f.message.value.trim()){n.textContent="Please fill in all fields with a valid email.";return}
+  if(!isSet(CONFIG.email)){n.textContent="Contact email is not set up yet. Please try again later.";return}
+  const body=`${f.message.value}\n\nFrom: ${f.name.value} (${f.email.value})`;
+  location.href=`mailto:${CONFIG.email}?subject=${encodeURIComponent("Portfolio enquiry from "+f.name.value)}&body=${encodeURIComponent(body)}`;
+  n.textContent="Opening your email app...";
+});
+
+/* Subtle reveal on scroll */
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}}),{threshold:.08});
+document.querySelectorAll(".reveal").forEach(r=>io.observe(r));
+</script>
+</body>
+</html>
